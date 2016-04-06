@@ -6,7 +6,6 @@ import android.os.StatFs;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -19,7 +18,7 @@ import java.util.List;
 
 //该功能主要实现Android系统获取Sd卡路径和SD卡内存的方法，详细的分析了所涉及的类和函数的功能，需要的朋友可以下载参考
 // （论程序员的修养）
-// @作者：孙顺涛2016.03
+// @作者：孙顺涛2016.03 。完整已提交到git
 //更多请关注个人比较垃圾的博客：www.bgwan.blog.163.com
 
 //说明：android.permission.WRITE_EXTERNAL_STORAGE的权限用来设置了内置sd卡的写权限
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             for (String path : sdCardPathList) {
                 sdCardStringBuilder.append(path);
             }
-            sdcardTextView.setText("外置SD卡的路径为：" + sdCardStringBuilder.toString()+"/wtsst");
+            sdcardTextView.setText("外置SD卡的路径为：" + sdCardStringBuilder.toString() + "/wtsst");
         } else {
             sdcardTextView.setText("外置SD卡的路径为：" + "-不存在");
         }
